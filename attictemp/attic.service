@@ -1,0 +1,12 @@
+ [Unit]
+ Description=My Sample Service
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ ExecStart=/usr/bin/python /home/pi/raspberrypi/attictemp/attic.py
+
+ [Install]
+ WantedBy=multi-user.target
+
+
